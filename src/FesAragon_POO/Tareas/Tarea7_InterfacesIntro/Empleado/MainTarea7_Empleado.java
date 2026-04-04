@@ -49,6 +49,6 @@ void main() {
             break;
 
         default:
-            System.out.println("Opción no valida!!!");
+            System.out.println("Opción no validaa!!!");
     }
 }
