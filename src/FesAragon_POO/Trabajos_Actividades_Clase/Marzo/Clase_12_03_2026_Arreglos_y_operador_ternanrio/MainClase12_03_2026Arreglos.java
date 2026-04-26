@@ -1,4 +1,4 @@
-import FesAragon_POO.Trabajos_Actividades_Clase.Marzo.Clase_12_03_2026_Arreglos.Perro;
+import FesAragon_POO.Trabajos_Actividades_Clase.Marzo.Clase_12_03_2026_Arreglos_y_operador_ternanrio.Perro;
 
 void main(String[] args) {
 
@@ -15,6 +15,7 @@ void main(String[] args) {
     System.out.println("------------------");
 
     edad = 20;
+    //operador ternario
     estado = edad >= 18 ? "Mayor de edad" : "Menor de edad";
     System.out.println("EDO: " + estado);
 

@@ -5,7 +5,7 @@ public class RadioReloj{
     protected int volumen;
     protected float frecuencia;
     protected boolean amFm; //true am
-    protected Reloj wacho;
+    protected Reloj wacho; // Composición
 
     public RadioReloj() {
     }

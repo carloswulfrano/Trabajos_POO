@@ -1,4 +1,4 @@
-package FesAragon_POO.Trabajos_Actividades_Clase.Marzo.Clase_12_03_2026_Arreglos;
+package FesAragon_POO.Trabajos_Actividades_Clase.Marzo.Clase_12_03_2026_Arreglos_y_operador_ternanrio;
 
 public class Perro {
     private int edad;

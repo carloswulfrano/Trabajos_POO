@@ -13,9 +13,7 @@ void main() {
     per1.comer();
 
     System.out.println("\n");
-
     System.out.println("----------------------");
-
     System.out.println("\n");
 
     Alumno al = new Alumno("Diego", 20, "Masculino", "2222222222", "ICO");
