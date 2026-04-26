@@ -1,6 +1,6 @@
-import FesAragon_POO.Interfaces.EjemploFiguras.Circulo;
-import FesAragon_POO.Interfaces.EjemploFiguras.Cuadrado;
-import FesAragon_POO.Interfaces.EjemploFiguras.Figura;
+import FesAragon_POO.Interfaces.EjemploFiguras_Clase_07_04_2026_ABRIL.Circulo;
+import FesAragon_POO.Interfaces.EjemploFiguras_Clase_07_04_2026_ABRIL.Cuadrado;
+import FesAragon_POO.Interfaces.EjemploFiguras_Clase_07_04_2026_ABRIL.Figura;
 
 void main() {
     Circulo c1 = new Circulo(2.0f, 10.0f, 10.0f);

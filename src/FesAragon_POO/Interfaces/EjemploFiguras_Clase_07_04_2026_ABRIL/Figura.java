@@ -1,4 +1,4 @@
-package FesAragon_POO.Interfaces.EjemploFiguras;
+package FesAragon_POO.Interfaces.EjemploFiguras_Clase_07_04_2026_ABRIL;
 
 public interface Figura {
 

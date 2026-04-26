@@ -9,11 +9,9 @@ public class CajaCarton <T>{
     public CajaCarton() {
     }
 
-
     public CajaCarton(T[] content) {
         this.content = content;
     }
-
 
     public T[] getContent() {
         return content;
@@ -23,7 +21,6 @@ public class CajaCarton <T>{
         this.content = content;
     }
 
-
     public void add(T elemento, int posicion){
 
         if (posicion >= 0 && posicion <=9){
@@ -31,7 +28,6 @@ public class CajaCarton <T>{
         }
 
     }
-
 
     public T get(int posicion){
 

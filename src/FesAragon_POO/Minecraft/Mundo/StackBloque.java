@@ -1,5 +1,6 @@
 package FesAragon_POO.Minecraft.Mundo;
 
+import java.security.PublicKey;
 import java.util.ArrayList;
 
 public class StackBloque<T> {
@@ -10,6 +11,7 @@ public class StackBloque<T> {
     private int max;
 
     public StackBloque() {
+        bloques = new ArrayList<>();
     }
 
     public StackBloque(ArrayList<T> bloques, int max) {
@@ -46,7 +48,9 @@ public class StackBloque<T> {
         switch (tipoSalida){
 
             case SACAR_TODO:
-                for (int i = 0; i < this.bloques.size(); i++) {
+                int tam = this.bloques.size();
+
+                for (int i = 0; i < tam; i++) {
                     salida.add(this.bloques.removeLast());
                 }
                 this.bloques.clear();
@@ -55,7 +59,8 @@ public class StackBloque<T> {
             case SACAR_MITAD:
                 //long arraylist
                 int mitad = this.bloques.size()/2;
-                for (int i = this.bloques.size()-1;i > mitad  ; i--) {
+
+                for (int i = this.bloques.size()-1; i > mitad  ; i--) {
                     salida.add(this.bloques.get(i));
                     this.bloques.remove(i);
                 }
@@ -74,16 +79,41 @@ public class StackBloque<T> {
         return salida;
     }
 
+    public void push(T bloque){
+        this.bloques.add(bloque);
+    }
+
+    public T pop(){
+        return this.bloques.removeLast();
+    }
+
+
     static void main(String[] args) {
         ArrayList<BloqueTronco> demo = new ArrayList<>();
-        demo.add(new BloqueTronco("Rugosa", "Clack", "Madera", 5));
-        demo.add(new BloqueTronco("Rugosa", "Clack", "Madera", 5));
-        demo.add(new BloqueTronco("Rugosa", "Clack", "Madera", 5));
-        demo.add(new BloqueTronco("Rugosa", "Clack", "Madera", 5));
-        demo.add(new BloqueTronco("Rugosa", "Clack", "Madera", 5));
+        demo.add(new BloqueTronco("Rugosa", "Tlak", "Madera", 5));
+        demo.add(new BloqueTronco("Rugosa", "Tlak", "Madera", 5));
+        demo.add(new BloqueTronco("Rugosa", "Tlak", "Madera", 5));
+        demo.add(new BloqueTronco("Rugosa", "Tlak", "Madera", 5));
+        demo.add(new BloqueTronco("Rugosa", "Tlak", "Madera", 5));
 
         StackBloque<BloqueTronco> pila = new StackBloque<>(demo, 64);
-        System.out.println(pila.sacar(StackBloque.SACAR_MITAD));
-        System.out.println(pila);
+        ArrayList<BloqueTronco> res = pila.sacar(StackBloque.SACAR_MITAD);
+
+        //System.out.println(pila.sacar(StackBloque.SACAR_MITAD));
+        System.out.println(res.size());
+        System.out.println(pila.getBloques().size());
+
+        System.out.println("\n\n");
+
+        StackBloque<BloqueTronco> prueba2 = new StackBloque<>();
+        prueba2.push(new BloqueTronco("Rugoso", "Tlak", "Madera1", 5));
+        prueba2.push(new BloqueTronco("Rugoso", "Tlak", "Madera2", 5));
+        prueba2.push(new BloqueTronco("Rugoso", "Tlak", "Madera3", 5));
+        prueba2.push(new BloqueTronco("Rugoso", "Tlak", "Madera4", 5));
+        prueba2.push(new BloqueTronco("Rugoso", "Tlak", "Madera5", 5));
+
+        ArrayList<BloqueTronco> res2 = prueba2.sacar(StackBloque.SACAR_MITAD);
+        System.out.println(res2);
+        System.out.println(prueba2.getBloques());
     }
 }

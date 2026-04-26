@@ -12,6 +12,31 @@ public class BloqueTronco extends Bloque{
     public BloqueTronco(String textura, String sonidoGolpeo, String material, int golpesParaQuitar) {
         super(textura, sonidoGolpeo, material, golpesParaQuitar);
         this.nombre = "Bloque de Tronco";
+        this.corteza = true;
+    }
+
+    public boolean isFlamable() {
+        return flamable;
+    }
+
+    public void setFlamable(boolean flamable) {
+        this.flamable = flamable;
+    }
+
+    public int getSegundosParaConsumirse() {
+        return segundosParaConsumirse;
+    }
+
+    public void setSegundosParaConsumirse(int segundosParaConsumirse) {
+        this.segundosParaConsumirse = segundosParaConsumirse;
+    }
+
+    public boolean isCorteza() {
+        return corteza;
+    }
+
+    public void setCorteza(boolean corteza) {
+        this.corteza = corteza;
     }
 
     @Override
