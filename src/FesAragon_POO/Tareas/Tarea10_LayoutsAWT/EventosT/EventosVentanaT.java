@@ -1,13 +1,12 @@
-package FesAragon_POO.Vista.Eventos;
+package FesAragon_POO.Tareas.Tarea10_LayoutsAWT.EventosT;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class EventosVentana implements WindowListener {
+public class EventosVentanaT implements WindowListener {
 
     @Override
     public void windowOpened(WindowEvent e) {
-
 
     }
 
