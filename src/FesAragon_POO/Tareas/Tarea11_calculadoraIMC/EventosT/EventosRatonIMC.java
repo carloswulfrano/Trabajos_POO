@@ -19,14 +19,11 @@ public class EventosRatonIMC implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         try {
-            // Obtener peso y altura
             double peso = Double.parseDouble(campoPeso.getText());
             double altura = Double.parseDouble(campoAltura.getText());
 
-            // Calcular IMC
             double imc = peso / (altura * altura);
 
-            // Determinar categoría
             String categoria;
             if (imc < 18.5) {
                 categoria = "Bajo peso";
@@ -42,9 +39,8 @@ public class EventosRatonIMC implements MouseListener {
                 categoria = "Obesidad grado III";
             }
 
-            // Mostrar resultado
-            resultado.setText(String.format("IMC: %.2f - %s", imc, categoria));
-            System.out.println("IMC calculado: " + String.format("%.2f", imc) + " - " + categoria);
+            resultado.setText("IMC: " + imc + " " + categoria);
+            System.out.println("IMC calculado: " + imc + " - " + categoria);
 
         } catch (NumberFormatException ex) {
             resultado.setText("Error: Ingrese números válidos");
