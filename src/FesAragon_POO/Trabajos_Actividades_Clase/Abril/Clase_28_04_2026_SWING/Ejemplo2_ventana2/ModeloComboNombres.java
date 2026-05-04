@@ -8,7 +8,7 @@ public class ModeloComboNombres implements ComboBoxModel {
     private ArrayList<String> nombres;
     private String selectedItem;
 
-    public ModeloComboNombres(ArrayList<String> nombres){
+    public ModeloComboNombres(ArrayList<String> nombres) {
         this.nombres = nombres;
     }
 
@@ -27,7 +27,7 @@ public class ModeloComboNombres implements ComboBoxModel {
 
     @Override
     public Object getSelectedItem() {
-        return null;
+        return selectedItem;
     }
 
     @Override
@@ -42,11 +42,9 @@ public class ModeloComboNombres implements ComboBoxModel {
 
     @Override
     public void addListDataListener(ListDataListener l) {
-
     }
 
     @Override
     public void removeListDataListener(ListDataListener l) {
-
     }
 }
