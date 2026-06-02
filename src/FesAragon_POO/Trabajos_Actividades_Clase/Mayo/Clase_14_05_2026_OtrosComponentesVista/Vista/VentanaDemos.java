@@ -114,7 +114,7 @@ public class VentanaDemos extends JFrame {
         createMenu();
 
         lblImagen = new JLabel("...");
-        //imagen = new ImageIcon();
+        imagen = new ImageIcon();
 
 
 
@@ -140,7 +140,7 @@ public class VentanaDemos extends JFrame {
         //this.setMenuBar(menubar);
 
 
-        //Agregar el panel al fram
+        //Agregar el panel al frame
         getContentPane().add(panelPrincipal);
         setVisible(true);
 
