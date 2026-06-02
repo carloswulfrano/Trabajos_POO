@@ -13,7 +13,8 @@ import java.awt.event.MouseListener;
 import java.io.*;
 import java.util.ArrayList;
 
-public class ControladorPrincipalProyecto implements MouseListener, ActionListener {
+public class ControladorPrincipalProyecto implements MouseListener, ActionListener  {
+                                                        //Uso el ActionListener para los menus
 
     private VentanaPrincipalProyecto view;
     private ModeloTablaAlbum modeloTabla;
