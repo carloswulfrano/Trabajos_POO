@@ -3,10 +3,7 @@ package FesAragon_POO.Proyecto_Final.View;
 import FesAragon_POO.Proyecto_Final.Model.Album;
 import FesAragon_POO.Proyecto_Final.Model.ModeloComboBoxGeneros;
 import FesAragon_POO.Proyecto_Final.Model.RelojSwing;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
